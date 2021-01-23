@@ -37,6 +37,8 @@
 <li>Lbc</li>
 <li>Carbon</li>
 </ul>
+<hr>
+<img src="databaseDiagram.png">
 
 ## License
 
