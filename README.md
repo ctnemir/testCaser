@@ -9,9 +9,9 @@
 <ol>
 <li>Öncelikle apache ve mysql server gereklidir.</li>
 <li>testCaser adında bir veritabanı oluşturun.</li>
-<li>.env klasöründe veritabanı ayarlarınızı doğrulayın.</li>
+<li>.env dosyasında veritabanı ayarlarınızı doğrulayın.</li>
 <li>Proje dosyalarını apache serverda testCaser adında bir klasöre kopyalayın.</li>
-<li>testCaser kalösürde comut istemi çalıştırın (composer kurulu olmalıdır.)</li>
+<li>testCaser klasöründe comut istemi çalıştırın (composer kurulu olmalıdır.)</li>
 <li><code>php artisan migrate</code> komutunu çalıştırın</li>
 <li>Projenin ana yolu şudur :"localhost/testCaser/public". Ancak virtualhost oluşturarak kolaylık sağlayabilirsiniz.</li>
 </ol>
