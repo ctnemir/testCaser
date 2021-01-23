@@ -1,0 +1,23 @@
+.page-features {
+  background: linear-gradient(180deg, $gray-100 0%, rgba(255, 255, 255, 0) 50%);
+
+  .row-1 {
+    .card-img {
+      width: auto;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-features {
+    .row-1-image {
+      position: relative;
+      left: -66px;
+    }
+
+    .row-2-image {
+      position: relative;
+      right: -66px;
+    }
+  }
+}

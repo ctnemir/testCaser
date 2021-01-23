@@ -1,0 +1,207 @@
+.stripe-nav {
+  position: relative;
+
+  .stripe-nav-root {
+    transition: .2s;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .stripe-nav-section {
+    display: flex;
+    align-items: center;
+
+    > .stripe-nav-root-link {
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .stripe-nav-root-link {
+    display: block;
+    white-space: nowrap;
+    user-select: none;
+    margin: 0;
+    padding: 12px 18px;
+    color: $gray-800;
+
+    &.active,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+
+  .stripe-nav-has-dropdown {
+    cursor: default;
+
+    &::after {
+      display: inline-block;
+      margin-left: .255em;
+      vertical-align: .255em;
+      content: "";
+      border-top: .2em solid;
+      border-right: .2em solid transparent;
+      border-bottom: 0;
+      border-left: .2em solid transparent;
+    }
+  }
+
+  .stripe-nav-dropdown-root {
+    position: relative;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    transform: rotateX(-15deg);
+    transform-origin: 50% 0;
+    opacity: 0;
+    will-change: transform, opacity;
+    transition-property: transform, opacity;
+    transition-duration: .2s;
+  }
+
+  &.stripe-nav-dropdown-active {
+    .stripe-nav-dropdown-root {
+      opacity: 1;
+      pointer-events: auto;
+      transform: none
+    }
+  }
+
+  .stripe-nav-dropdown-background {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+    width: 520px;
+    height: 400px;
+    transform: translateX(0);
+    transform-origin: 0 0
+  }
+
+  .stripe-nav-dropdown-background-alt,
+  .stripe-nav-dropdown-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    transition-property: transform;
+    transition-duration: .2s
+  }
+
+  .stripe-nav-arraw {
+    top: -6px;
+    margin: 0 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-radius: 4px 0 0 0;
+    background: #fff;
+    box-shadow: -3px -3px 5px rgba(82, 95, 127, .04);
+    will-change: transform;
+    transition-property: transform;
+  }
+
+  .stripe-nav-dropdown-background-alt {
+    right: 0;
+    height: 1000px;
+    background: #f6f9fc
+  }
+
+  .stripe-nav-arraw,
+  .stripe-nav-dropdown-container {
+    position: absolute;
+    left: 0;
+  }
+
+  .stripe-nav-dropdown-container {
+    overflow: hidden;
+    top: 0;
+    transform: translateX(0);
+    will-change: transform, width, height;
+    transition-property: transform, width, height;
+  }
+
+  .stripe-nav-dropdown-section {
+    opacity: 0;
+    will-change: transform, opacity;
+    transition-property: transform, opacity;
+    transition-duration: .2s;
+
+    &.active {
+      position: relative;
+      z-index: 1;
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    &.left {
+      transform: translateX(-150px)
+    }
+
+    &.right {
+      transform: translateX(150px)
+    }
+  }
+
+  .stripe-nav-dropdown-active .stripe-nav-dropdown-section.active {
+    pointer-events: auto
+  }
+
+  .stripe-nav-dropdown-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    p {
+      white-space: pre-wrap;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .stripe-nav-root {
+    width: 100%;
+    scroll-behavior: smooth;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stripe-nav-dropdown-background {
+    max-width: 100%;
+  }
+
+  .stripe-nav-dropdown-container {
+    max-width: 100%;
+    width: 100% !important;
+    overflow-x: scroll !important;
+    transform: translateX(0) !important;
+  }
+
+  .stripe-nav-dropdown-content {
+    min-width: 100%;
+  }
+
+  .stripe-nav-dropdown-section:not(.active) {
+    overflow: hidden;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .stripe-nav-arraw,
+  .stripe-nav-dropdown-container {
+    transition-duration: .2s
+  }
+}

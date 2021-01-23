@@ -1,0 +1,31 @@
+.media {
+  position: relative;
+
+  &:hover {
+    .media-object {
+      background-color: #f5f5f5;
+      box-shadow: 0 8px 8px -10px rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+.media-object {
+  transition: box-shadow .2s, background-color .2s;
+  box-shadow: 0 14px 18px -10px rgba(0, 0, 0, .5);
+
+}
+
+.media-title {
+  a {
+    position: relative;;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

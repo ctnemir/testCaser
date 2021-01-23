@@ -1,0 +1,21 @@
+.page-homepage {
+  .row-1 {
+    .card-img {
+      width: auto;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-homepage {
+    .row-1-image {
+      position: relative;
+      left: -66px;
+    }
+
+    .row-2-image {
+      position: relative;
+      right: -66px;
+    }
+  }
+}

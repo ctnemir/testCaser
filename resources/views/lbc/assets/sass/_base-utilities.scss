@@ -1,0 +1,315 @@
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 0;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.font-size-base {
+  font-size: $font-size-base !important;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
+  line-height: 1.789471;
+
+  .lead {
+    line-height: 1.389471;
+  }
+}
+
+.code {
+  color: #e83e8c;
+}
+
+// Background colors set
+@if($stripe == true) {
+  $colors: (
+    'stripe-100': $stripe-100,
+    'stripe-200': $stripe-200,
+    'stripe-300': $stripe-300,
+    'stripe-400': $stripe-400,
+    'stripe-450': $stripe-450,
+    'stripe-480': $stripe-480,
+    'stripe-500': $stripe-500,
+    'stripe-550': $stripe-550,
+    'stripe-600': $stripe-600,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($zutes == true) {
+  $colors: (
+    'zutes-100': $zutes-100,
+    'zutes-200': $zutes-200,
+    'zutes-300': $zutes-300,
+    'zutes-400': $zutes-400,
+    'zutes-500': $zutes-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($pepoy == true) {
+  $colors: (
+    'pepoy-100': $pepoy-100,
+    'pepoy-200': $pepoy-200,
+    'pepoy-300': $pepoy-300,
+    'pepoy-400': $pepoy-400,
+    'pepoy-500': $pepoy-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($vuve == true) {
+  $colors: (
+    'vuve-100': $vuve-100,
+    'vuve-200': $vuve-200,
+    'vuve-300': $vuve-300,
+    'vuve-400': $vuve-400,
+    'vuve-500': $vuve-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($bapido == true) {
+  $colors: (
+    'bapido-100': $bapido-100,
+    'bapido-200': $bapido-200,
+    'bapido-300': $bapido-300,
+    'bapido-400': $bapido-400,
+    'bapido-500': $bapido-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($wepoco == true) {
+  $colors: (
+      'wepoco-100': $wepoco-100,
+      'wepoco-200': $wepoco-200,
+      'wepoco-300': $wepoco-300,
+      'wepoco-400': $wepoco-400,
+      'wepoco-500': $wepoco-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($fuzize == true) {
+  $colors: (
+      'fuzize-100': $fuzize-100,
+      'fuzize-200': $fuzize-200,
+      'fuzize-300': $fuzize-300,
+      'fuzize-400': $fuzize-400,
+      'fuzize-500': $fuzize-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors set
+@if($boyoho == true) {
+  $colors: (
+      'boyoho-100': $boyoho-100,
+      'boyoho-200': $boyoho-200,
+      'boyoho-300': $boyoho-300,
+      'boyoho-400': $boyoho-400,
+      'boyoho-500': $boyoho-500,
+  );
+  @each $key, $val in $colors {
+    .bg-#{$key} {
+      background-color: $val !important;
+    }
+    .text-#{$key} {
+      color: $val !important;
+    }
+  }
+}
+
+// Background colors
+$colors: (
+  'transparent': rgba(255, 255, 255, 0),
+  'lighter': #f5f5f5,
+  'yellow': $yellow,
+  'black': $black,
+  'gray-100': $gray-100,
+  'gray-200': $gray-200,
+  'gray-300': $gray-300,
+  'gray-400': $gray-400,
+  'gray-500': $gray-500,
+  'gray-600': $gray-600,
+  'gray-700': $gray-700,
+  'gray-800': $gray-800,
+  'gray-900': $gray-900,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'color': $body-color,
+  'white': $white,
+  'twitter': $twitter,
+  'facebook': $facebook,
+);
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+  .text-#{$key} {
+    color: $val !important;
+  }
+}
+
+// Background colors with hover effekt
+$colors: (
+  'lighter-hover': #f5f5f5,
+  'yellow-hover': $yellow,
+  'black-hover': $black,
+  'gray-100-hover': $gray-100,
+  'gray-200-hover': $gray-200,
+  'gray-300-hover': $gray-300,
+  'gray-400-hover': $gray-400,
+  'gray-500-hover': $gray-500,
+  'gray-600-hover': $gray-600,
+  'gray-700-hover': $gray-700,
+  'gray-800-hover': $gray-800,
+  'gray-900-hover': $gray-900,
+  'gray-hover': $gray-600,
+  'gray-dark-hover': $gray-800,
+  'blue-hover': $blue,
+  'indigo-hover': $indigo,
+  'purple-hover': $purple,
+  'pink-hover': $pink,
+  'red-hover': $red,
+  'orange-hover': $orange,
+  'green-hover': $green,
+  'teal-hover': $teal,
+  'cyan-hover': $cyan,
+  'color-hover': $body-color,
+  'white-hover': $white,
+  'twitter-hover': $twitter,
+  'facebook-hover': $facebook,
+);
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: $val !important;
+
+    &:focus,
+    &:hover {
+      background-color: darken($val, 5%) !important;
+    }
+  }
+  .text-#{$key} {
+    color: $val !important;
+  }
+}
+
+// Z-index`s
+$index: (
+  'index-1': 1,
+  'index-2': 2,
+  'index-3': 3,
+  'index-4': 4,
+  'index-5': 5,
+  'index-6': 6,
+  'index-7': 7,
+  'index-8': 8,
+  'index-9': 9,
+  'index-10': 10,
+);
+@each $key, $val in $index {
+  .z-#{$key} {
+    z-index: $val !important;
+  }
+}
+
+// min-widths and heights
+$w-h-sizes: () !default;
+$w-h-sizes: map-merge(
+  (
+    100: 100px,
+    200: 200px,
+    300: 300px,
+    400: 400px,
+    500: 500px,
+    600: 600px,
+    700: 700px,
+    800: 800px,
+    900: 900px,
+  ),
+  $w-h-sizes
+);
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: cu-w, height: cu-h) {
+      @each $size, $length in $w-h-sizes {
+        .#{$abbrev}#{$infix}-#{$size} {
+          min-#{$prop}: $length !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "author": {
+      "title": "Genere Nomina",
+      "link": {
+        "href": "#"
+      },
+      "image": {
+        "src": "liara/images/peoples/men.jpg"
+      }
+    },
+    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    "publishedDate": "25. October 2019 12:30 pm",
+    "comments": [{
+      "author": {
+        "title": "Genere Nomina",
+        "link": {
+          "href": "#"
+        },
+        "image": {
+          "src": "liara/images/peoples/men.jpg"
+        }
+      },
+      "text": "Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "publishedDate": "25. October 2019 12:30 pm",
+      "comments": ""
+    }, {
+      "author": {
+        "title": "Genere Nomina",
+        "link": {
+          "href": "#"
+        },
+        "image": {
+          "src": "liara/images/peoples/men.jpg"
+        }
+      },
+      "text": "Magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+      "publishedDate": "25. October 2019 12:30 pm",
+      "comments": ""
+    }]
+  },
+  {
+    "author": {
+      "title": "Genere Nomina",
+      "link": {
+        "href": "#"
+      },
+      "image": {
+        "src": "liara/images/peoples/men.jpg"
+      }
+    },
+    "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "publishedDate": "25. October 2019 12:29 pm",
+    "comments": [{
+      "author": {
+        "title": "Genere Nomina",
+        "link": {
+          "href": "#"
+        },
+        "image": {
+          "src": "liara/images/peoples/men.jpg"
+        }
+      },
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+      "publishedDate": "25. October 2019 12:30 pm",
+      "comments": ""
+    }]
+  }
+]

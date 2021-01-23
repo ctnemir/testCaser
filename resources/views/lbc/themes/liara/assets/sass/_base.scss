@@ -1,0 +1,38 @@
+body {
+  background: linear-gradient(180deg, $gray-100 0%, rgba(255, 255, 255, 0) 50%);
+  padding-top: 58px;
+  overflow-x: hidden;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.card[class*="shadow"],
+a[class*="shadow"] {
+  transition: box-shadow .2s;
+
+  &:hover,
+  &:focus {
+    &.shadow {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
+    }
+
+    &.shadow-lg {
+      box-shadow: 0 1rem 3rem $primary !important;
+    }
+  }
+}
+
+figcaption {
+  font-size: $font-size-sm;
+}
+
+@include media-breakpoint-up(lg) {
+  body {
+    padding-top: $nav-link-height + ($navbar-padding-y * 2);
+  }
+}

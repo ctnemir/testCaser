@@ -1,0 +1,29 @@
+.card {
+  transition: box-shadow .2s, background-color .2s;
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, .5);
+  background-color: $body-bg;
+
+  &:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 8px 8px -10px rgba(0, 0, 0, .5);
+  }
+}
+
+.card-title {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  a {
+    &:hover {
+      color: $link-hover-color !important;
+    }
+
+    &.text-white {
+      &:hover {
+        color: darken(white, 15%) !important;
+      }
+    }
+  }
+}

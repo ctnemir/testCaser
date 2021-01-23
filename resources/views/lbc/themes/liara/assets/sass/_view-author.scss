@@ -1,0 +1,14 @@
+.view-author {
+  .author-box {
+    .media-title {
+      @extend .display-4;
+
+      small {
+        font-size: 50%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+}

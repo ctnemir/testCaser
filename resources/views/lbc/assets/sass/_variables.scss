@@ -1,0 +1,82 @@
+// Variables
+$stripe: true !default;
+$stripe-100: #6772e5 !default;
+$stripe-200: #3297d3 !default;
+$stripe-300: #fdd569 !default;
+$stripe-400: #24b47e !default;
+$stripe-450: #f3fffa !default;
+$stripe-480: #15956f !default;
+$stripe-500: #e25950 !default;
+$stripe-550: #fff6f5 !default;
+$stripe-600: #b76ac4 !default;
+
+$zutes: true !default;
+$zutes-100: #d6e8ee !default;
+$zutes-200: #97cadb !default;
+$zutes-300: #018abe !default;
+$zutes-400: #02457a !default;
+$zutes-500: #001b48 !default;
+
+$pepoy: false;
+$pepoy-100: #ccabd8 !default;
+$pepoy-200: #8474a1 !default;
+$pepoy-300: #6ec6ca !default;
+$pepoy-400: #08979d !default;
+$pepoy-500: #05585c !default;
+
+$vuve: true;
+$vuve-100:  #a6e3ce !default;
+$vuve-200:  #dde6a5 !default;
+$vuve-300:  #ffdd94 !default;
+$vuve-400:  #fa897b !default;
+$vuve-500:  #ccabd8 !default;
+
+$bapido: false !default;
+$bapido-100:  #d9ecf2 !default;
+$bapido-200:  #f56a79 !default;
+$bapido-300:  #ff414d !default;
+$bapido-400:  #1aa6b7 !default;
+$bapido-500:  #002d40 !default;
+
+$wepoco: false !default;
+$wepoco-100:  #54c0cc !default;
+$wepoco-200:  #1f4f59 !default;
+$wepoco-300:  #7ea00e !default;
+$wepoco-400:  #dcd964 !default;
+$wepoco-500:  #213502 !default;
+
+$fuzize: true !default;
+$fuzize-100:  #e25b45 !default;
+$fuzize-200:  #ff8367 !default;
+$fuzize-300:  #fac172 !default;
+$fuzize-400:  #89d5c9 !default;
+$fuzize-500:  #adc865 !default;
+
+$boyoho: false !default;
+$boyoho-100:  #f5cec7 !default;
+$boyoho-200:  #e79796 !default;
+$boyoho-300:  #ffc98b !default;
+$boyoho-400:  #ffb284 !default;
+$boyoho-500:  #c6c09c !default;
+
+$facebook:#3b5998 !default;
+$twitter: #00acee !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                #666 !default;
+$primary:                 $stripe-100 !default;
+$info:                    $stripe-200 !default;
+$danger:                  $stripe-500 !default;
+$success:                 $stripe-400 !default;
+$warning:                 $stripe-300 !default;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-sticky:                     1000 !default;
+$zindex-dropdown:                   1020 !default;

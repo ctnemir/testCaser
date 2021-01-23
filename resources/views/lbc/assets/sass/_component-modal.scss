@@ -1,0 +1,15 @@
+.cu-modal {
+  .modal-content {
+    &[class*="bg-"] {
+      .modal-header {
+        border-width: 0;
+        padding-bottom: 0;
+      }
+
+      .modal-footer {
+        border-width: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}

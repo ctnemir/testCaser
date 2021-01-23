@@ -1,0 +1,19 @@
+.post-meta {
+  font-size: $font-size-sm;
+}
+
+.post-meta-body {
+  margin-left: .5rem;
+  align-self: center;
+}
+
+.post-meta-title {
+  margin-bottom: 0;
+}
+
+.media,
+.card {
+  .post-meta {
+    margin-top: 1rem;
+  }
+}

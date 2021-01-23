@@ -1,0 +1,192 @@
+// Variables
+$navigationHeightMobile: 58px;
+
+// Navigation
+.navigation {
+  transition: top .2s;
+  z-index: 1;
+  top: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .08);
+}
+
+.navigation-transparent {
+  top: -88px;
+}
+
+// Logo
+.navigation-logo {
+  position: relative;
+  z-index: 1;
+  color: $headings-color !important;
+
+  svg {
+    top: 1px;
+  }
+}
+
+// Serach form
+.navigation-search {
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid $border-color;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+    }
+
+    &:focus + .btn {
+      color: $primary !important;
+    }
+  }
+
+  .btn {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+    margin-left: -46px;
+    position: relative;
+    top: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+// Mobile - Navigation menu icon
+.hamburger {
+  right: 7px;
+}
+
+// Mobile - Navigation open  - menu & icon
+.navigation-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+
+  .navbar-dark {
+    .navigation-logo {
+      color: white !important;
+    }
+  }
+
+  .hamburger {
+    transform: rotate(90deg);
+    z-index: 1;
+  }
+
+  .hamburger-top-bun {
+    transform: rotate(45deg) translateY(0px);
+  }
+
+  .hamburger-bottom-bun {
+    transform: rotate(-45deg) translateY(0px);
+  }
+
+  .hamburger span {
+    background: white;
+  }
+
+  .navbar-collapse {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    right: 0;
+  }
+
+  .nav-link {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+// Desktop
+@include media-breakpoint-up(md) {
+  .navigation-logo {
+    top: -4px;
+  }
+
+  // Serach form
+  .navigation-search {
+    .form-control {
+      width: 280px;
+    }
+  }
+
+  // Social icons
+  .navigation-social {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 1px solid $card-border-color;
+  }
+}
+
+// Mobile
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-down(md) {
+  .navigation {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: $navigationHeightMobile;
+  }
+
+  // Mobile - Navigation menu
+  .navbar-collapse {
+    background-color: $gray-900;
+    transition: right .2s ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    padding: $navigationHeightMobile 15px 15px;
+  }
+
+  .navigation-logo {
+    padding: 0;
+  }
+
+  .navigation-search {
+    margin-top: 1.5rem;
+
+    .form-group {
+      width: 100%;
+    }
+
+    .form-control {
+      background-color: $gray-900;
+      border-color: black;
+    }
+
+    .btn,
+    .btn:active {
+      border-color: $gray-900 !important;
+      color: $navbar-dark-color !important;
+      background-color: $gray-900 !important;
+    }
+
+    .btn:active {
+      color: white !important;
+    }
+  }
+
+  .navigation-social {
+    flex-direction: row;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+
+    svg {
+      fill: $navbar-dark-color;
+    }
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1110px) {
+  // Serach form
+  .navigation-search {
+    .form-control {
+      width: 160px;
+    }
+  }
+}

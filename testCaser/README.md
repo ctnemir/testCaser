@@ -1,2 +1,0 @@
-# testCaser
-SoftwareTesting Lesson Project
