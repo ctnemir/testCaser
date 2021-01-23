@@ -40,6 +40,11 @@
 <hr>
 <h4>Veritabanı Diagramı</h4>
 <img src="databaseDiagram.png">
+<hr>
+<h4>Ekran Görüntüleri</h4>
+<img src="screenShots/dashboard.png">
+<img src="screenShots/addTask.png">
+<img src="screenShots/showTask.png">
 
 ## License
 
