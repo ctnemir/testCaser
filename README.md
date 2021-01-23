@@ -13,7 +13,7 @@
 <li>Proje dosyalarını apache serverda testCaser adında bir klasöre kopyalayın.</li>
 <li>testCaser klasöründe comut istemi çalıştırın (composer kurulu olmalıdır.)</li>
 <li><code>php artisan migrate</code> komutunu çalıştırın</li>
-<li>Projenin ana yolu şudur :"localhost/testCaser/public". Ancak virtualhost oluşturarak kolaylık sağlayabilirsiniz.</li>
+<li>Projenin ana yolu şudur: "localhost/testCaser/public". Ancak virtualhost oluşturarak kolaylık sağlayabilirsiniz.</li>
 </ol>
 <hr>
 
