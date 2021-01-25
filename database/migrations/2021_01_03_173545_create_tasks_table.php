@@ -22,8 +22,8 @@ class CreateTasksTable extends Migration
             //$table->date('taskDate');
             $table->date('preDate')->nullable();
             $table->date('realDate')->nullable();
-            $table->integer('statusId')->nullable();
-            $table->integer('projectId')->nullable();
+            $table->foreign('statusId')->constrained()->nullable();
+            $table->foreign('projectId')->nullable()->constrained()->onDelete("cascade");
         });
     }
 

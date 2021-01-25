@@ -16,10 +16,10 @@ class CreateTaskStatesTable extends Migration
         Schema::create('taskStates', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('taskId');
-            $table->bigInteger('statusId',false,true)->nullable();
+            $table->foreign('taskId')->constrained()->onDelete('cascade')->references('id')->on('tasks');
+            $table->foreign('statusId')->constrained()->references('id')->on('status');
             $table->text('taskStatesDesc');
-            $table->bigInteger('userId',false,true);
+            $table->foreign('userId')->constrained()->references('id')->on('users');
         });
     }
 
